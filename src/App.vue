@@ -24,10 +24,6 @@ export default {
     };
   },
   computed: {
-    currentPage() {
-      console.log(this.pages[this.currentPageIndex])
-      return this.pages[this.currentPageIndex].component;
-    }
   }
 }
 </script>
@@ -39,8 +35,7 @@ body {
   background: #E5E8EF;
 
   .page {
-    margin-left: 72px;
-    padding: 28px;
+    margin-left: 80px;
   }
 }
 </style>

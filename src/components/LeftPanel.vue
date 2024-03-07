@@ -38,7 +38,7 @@
             </router-link>
             <router-link to="/dashboard" :class="{ active: isActive === '/dashboard' }">
                 <span></span>
-                <img src="@/assets/users.svg" alt="Users" @click="linkToPage('dashboard')">
+                <img src="@/assets/users.svg" alt="Users">
             </router-link>
         </div>
         <div class="leftPanel__bottom">
