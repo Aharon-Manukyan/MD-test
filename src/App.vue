@@ -1,29 +1,21 @@
 <template>
   <div id="app">
     <LeftPanel></LeftPanel>
-    <router-view class="page"></router-view>
+    <div class="page">
+      <NavBar></NavBar>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
 // 6 pages , how to generating all pages dynamically
 import LeftPanel from "@/components/LeftPanel.vue"
-import HomePage from "@/pages/HomePage.vue";
-import DashboardPage from "@/pages/DashboardPage.vue";
+import NavBar from "@/components/NavBar.vue"
 export default {
   components: {
-    LeftPanel
-  },
-  data() {
-    return {
-      pages: [
-        { name: "Home", component: HomePage },
-        { name: "Dashboard", component: DashboardPage }
-      ],
-      currentPageIndex: 0
-    };
-  },
-  computed: {
+    LeftPanel,
+    NavBar
   }
 }
 </script>
