@@ -49,7 +49,7 @@ export default {
     computed: {
         showPages() {
             let pages = []
-            if (this.totalPages < 4) {
+            if (this.totalPages < 6) {
                 return this.totalPages
             }
 

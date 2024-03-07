@@ -65,9 +65,11 @@
                 </thead>
                 <tbody>
                     <tr v-for="user in paginatedUsers" :key="user.id" class="row">
-                        <td class="row__name">
-                            <img :src="user.img ? user.img : require('@/assets/no_avatar.png')" alt="Avatar">
-                            <span>{{ user['business name'] }}</span>
+                        <td>
+                            <div class="row__name">
+                                <img :src="user.img ? user.img : require('@/assets/no_avatar.png')" alt="Avatar">
+                                <span>{{ user['business name'] }}</span>
+                            </div>
                         </td>
                         <td>
                             <span>{{ user.team }}</span>
@@ -94,7 +96,9 @@
                             </div>
                         </td>
                         <td class="row__delete">
-                            <img src="@/assets/recycle.svg" alt="recycle">
+                            <div>
+                                <img src="@/assets/recycle.svg" alt="recycle">
+                            </div>
                         </td>
                     </tr>
                 </tbody>
@@ -164,9 +168,153 @@ export default {
                 {
                     id: 16, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
                 },
+                {
+                    id: 17, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 18, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 19, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 20, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 21, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 22, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 23, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 24, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 25, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 26, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 27, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 28, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 29, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 30, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 31, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 32, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 33, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 34, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 35, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 36, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 37, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 38, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 39, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 40, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 41, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 42, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 43, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 44, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 45, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 46, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 47, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 48, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 49, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 50, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 51, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 52, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 53, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 54, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 55, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 56, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 57, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 58, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 59, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 60, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
+                {
+                    id: 61, "business name": "Sarah Conor", img: require('@/assets/avatar1.png'), team: "Crosty", role: "Team Lead", gmail: "sarahconnor@gmail.com", birthday: "25.04.1991", telegram: "@sarahconor", "last login": "03.11.2021"
+                },
+                {
+                    id: 62, "business name": "Arnold Brown", img: "", team: "Gunters", role: "Seo Specialist", gmail: "arnoldbrown@gmail.com", birthday: "12.04.1989", telegram: "@arnoldbrown", "last login": "02.11.2021"
+                },
+                {
+                    id: 63, "business name": "Ernest Eberly", img: require('@/assets/avatar2.png'), team: "Flamethrower", role: "Semantic Specialist", gmail: "ernesteberly@gmail.com", birthday: "17.06.1993", telegram: "@ErnestEberly", "last login": "03.11.2021"
+                },
+                {
+                    id: 64, "business name": "Lance Thomas", img: "", team: "Wizards", role: "Seo Specialist", gmail: "lancethomas@gmail.com", birthday: "12.04.1989", telegram: "@LanceThomas", "last login": "01.11.2021"
+                },
             ],
             currentPage: 1,
-            usersPerPage: 3,
+            usersPerPage: 9,
 
         }
     },
@@ -215,13 +363,17 @@ export default {
 
     .section table {
         width: 100%;
+        border-spacing: 0px !important;
 
         thead {
-            height: 64px;
             background: #efefef;
             border-radius: 12px;
 
             tr {
+                &>th {
+                    border-right: 1px solid #E5E8EF;
+                }
+
                 &>th:first-child {
                     border-top-left-radius: 12px;
                     border-bottom-left-radius: 12px;
@@ -230,6 +382,7 @@ export default {
                 &>th:last-child {
                     border-top-right-radius: 12px;
                     border-bottom-right-radius: 12px;
+                    border-right: reset !important;
                 }
 
                 .header {
@@ -298,12 +451,18 @@ export default {
         }
 
         tbody {
-            tr td {
-                padding: 14px 16px;
 
-                img {
-                    width: 36px;
-                    height: 36px;
+
+            tr {
+                border-bottom: 1px solid red;
+
+                td {
+                    padding: 14px 16px;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
                 }
 
                 span {
@@ -314,6 +473,14 @@ export default {
                     color: #2A355A;
 
                 }
+            }
+
+            tr td {
+                border-bottom: 1px solid #F5F7FB;
+            }
+
+            &>tr:last-child td {
+                border-bottom: 0px solid #F5F7FB;
             }
 
             .row {
@@ -330,6 +497,11 @@ export default {
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
+                    // height: 64px;
+
+                    div {
+                        padding: 7px 0px;
+                    }
 
                     img {
                         width: 20px;
