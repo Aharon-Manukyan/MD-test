@@ -17,6 +17,9 @@
             <div class="shorts__main--online content">
                 <div class="content__count">36</div>
                 <div class="content__title">online</div>
+                <span>
+                    <img src="@/assets/online.svg" alt="online">
+                </span>
             </div>
             <div class="shorts__main--mens content">
                 <div class="content__count">50</div>
@@ -122,6 +125,13 @@
         .content {
             border-right: 1px solid #E5E8EF;
             padding: 0 30px;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                right: 25px;
+            }
 
             &__count {
                 font-family: 'Commissioner';
